@@ -9,13 +9,13 @@ Repository for R Programming Assignments
 ## Assignment 2 – myMean Function
 This repository has a corrected version of the `myMean` function in R.
 
-### Incorrect R Function Error
+### Incorrect R Function Error Message:
 Error in myMean(assignment2) : object 'assignment' not found
 
-### Why it failed
+### Why it failed:
 The function fails because the variable names inside the function do not match the function argument. The function argument is named assignment2, but the code refers to assignment and someData, which do not exist.
 
-### Corrected R Function
+### Corrected R Function:
 myMean <- function(assignment2) {
   return(sum(assignment2) / length(assignment2))
 }

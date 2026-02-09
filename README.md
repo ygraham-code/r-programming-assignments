@@ -29,6 +29,37 @@ This histogram shows the distribution of how often patients visit the hospital. 
 - `boxplot.png`: Boxplot showing blood pressure by first doctor assessment.
 - `histogram.png`: Histogram of patient visit frequency.
 
+## Code used
+
+Freq <- c(0.6, 0.3, 0.4, 0.4, 0.2, 0.6, 0.3, 0.4, 0.9, 0.2)
+bloodp <- c(103, 87, 32, 42, 59, 109, 78, 205, 135, 176)
+first <- c(1, 1, 1, 1, 0, 0, 0, 0, NA, 1)
+second <- c(0, 0, 1, 1, 0, 0, 1, 1, 1, 1)
+finaldecision <- c(0, 1, 0, 1, 0, 1, 0, 1, 1, 1)
+
+
+first_factor <- factor(first, levels = c(0, 1), labels = c("good", "bad"))
+
+boxplot(bloodp ~ first_factor, main = "Blood Pressure by First Assessment",
+        xlab = "First Assessment (Good / Bad)", ylab = "Blood Pressure",
+        col = c("lightgreen", "lightcoral"))
+
+hist(Freq, main = "Frequency of Visits Distribution",
+     xlab = "Frequency of Visits", col = "lightblue", breaks = 5)
+
+png("boxplot.png")
+boxplot(bloodp ~ first_factor, main = "Blood Pressure by First Assessment",
+        xlab = "First Assessment (Good / Bad)", ylab = "Blood Pressure",
+        col = c("lightgreen", "lightcoral"))
+dev.off()
+
+png("histogram.png")
+hist(Freq, main = "Frequency of Visits Distribution",
+     xlab = "Frequency of Visits", col = "lightblue", breaks = 5)
+dev.off()
+
+
+
 #################
 
 ## Assignment 2 – myMean Function

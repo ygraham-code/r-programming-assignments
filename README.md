@@ -15,7 +15,6 @@ In this assignment, I analyzed data collected by a local hospital. The dataset i
 - **Blood Pressure (bloodp)**
 - **Doctor's First Assessment (first)**
 - **Doctor's Second Assessment (second)**
-- **Final Decision by the Emergency Unit (finaldecision)**
 
 The analysis involves visualizing the data through **boxplots** and **histograms** to understand patterns in blood pressure and visit frequency.
 

@@ -5,6 +5,19 @@ Course: LIS4370
 
 Repository for R Programming Assignments
 
+Patients with a "good" assessment (green box) have a more consistent and moderate blood pressure, generally ranging between 50 and 150, with most values clustered near the middle of that range. This suggests that patients rated as "good" tend to have stable blood pressure.
+
+Patients with a "bad" assessment (red box), on the other hand, have more variability in their blood pressure, ranging from as low as 50 to as high as 100. This wider spread could indicate that patients with more extreme or unpredictable blood pressure tend to be rated poorly by the doctor.
+
+
+The majority of patients have a low frequency of visits, with 4 patients falling in the 0.2 to 0.3 range.
+
+As the visit frequency increases, the number of patients decreases. Only 1 patient falls into the 0.8 to 0.9 range, indicating that most patients don’t visit the hospital regularly.
+
+This suggests that most patients visit the hospital infrequently, possibly for emergencies or rare visits, while a smaller number of patients might have more frequent hospital visits.
+
+The data might indicate that the hospital primarily serves patients with occasional needs, with very few individuals requiring regular visits.
+
 ## Module 4 Programming structure assignment
 
 ### Hospital Data Analysis

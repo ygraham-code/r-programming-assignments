@@ -22,7 +22,7 @@ The analysis involves visualizing the data through **boxplots** and **histograms
 ### Boxplot of Blood Pressure by Doctor's First Assessment
 ![Blood Pressure Boxplot](boxplot.png)
 
-The boxplot above shows the distribution of blood pressure for patients rated as "good" or "bad" by the first doctor. Patients with "bad" assessments tend to have higher and more variable blood pressure values compared to those with "good" assessments.
+The boxplot above shows the distribution of blood pressure for patients rated as "good" or "bad" by the first doctor. Patients may be seen as "bad" if their blood pressure is more unpredictable or inconsistent, while "good" ratings tend to be given to those with more stable and moderate blood pressure levels.
 
 ### Histogram of Frequency of Visits
 ![Visit Frequency Histogram](histogram.png)

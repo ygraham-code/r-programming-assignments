@@ -11,10 +11,6 @@ Repository for R Programming Assignments
 
 In this assignment, I analyzed data collected by a local hospital. The dataset includes the following variables:
 
-- **Frequency of Visits (Freq)**
-- **Blood Pressure (bloodp)**
-- **Doctor's First Assessment (first)**
-- **Doctor's Second Assessment (second)**
 
 The analysis involves visualizing the data through **boxplots** and **histograms** to understand patterns in blood pressure and visit frequency.
 

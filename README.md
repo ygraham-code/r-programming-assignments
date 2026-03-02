@@ -7,7 +7,7 @@ Repository for R Programming Assignments
 
 
 ## Module # 7 R Object: S3 vs. S4 assignment
-# S3 object
+# S3 Object
 student_s3 <- list(name="Myself", age=29, GPA=3.5)
 class(student_s3) <- "student"
 

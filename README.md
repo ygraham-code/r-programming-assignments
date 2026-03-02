@@ -5,6 +5,33 @@ Course: LIS4370
 
 Repository for R Programming Assignments
 
+
+## Module # 7 R Object: S3 vs. S4 assignment
+# S3 object
+student_s3 <- list(name="Myself", age=29, GPA=3.5)
+class(student_s3) <- "student"
+
+print.student <- function(x) {
+  cat("Student Name:", x$name, "\n")
+  cat("Age:", x$age, "\n")
+  cat("GPA:", x$GPA, "\n")
+}
+
+print(student_s3)
+
+# S4 Object
+
+setClass("student",
+         slots=list(
+           name="character",
+           age="numeric",
+           GPA="numeric"
+         ))
+
+student_s4 <- new("student", name="Myself", age=29, GPA=3.5)
+
+student_s4
+
 ## Module 4 Programming structure assignment
 
 ### Hospital Data Analysis

@@ -8,6 +8,68 @@ Repository for R Programming Assignments
 
 ## assignment9.R
 
+[data("mtcars")
+head(mtcars)
+
+
+
+
+# Scatter plot
+plot(mtcars$wt, mtcars$mpg,
+     main = "Base: MPG vs Weight",
+     xlab = "Weight",
+     ylab = "MPG",
+     col = "blue",
+     pch = 19)
+
+# Histogram
+hist(mtcars$mpg,
+     main = "Base: Distribution of MPG",
+     xlab = "MPG",
+     col = "lightgray",
+     border = "black")
+
+
+
+
+library(lattice)
+
+# Conditional scatter plot
+xyplot(mpg ~ wt | factor(cyl),
+       data = mtcars,
+       main = "Lattice: MPG vs Weight by Cylinders",
+       xlab = "Weight",
+       ylab = "MPG",
+       col = "darkgreen")
+
+# Boxplot
+bwplot(mpg ~ factor(cyl),
+       data = mtcars,
+       main = "Lattice: MPG by Cylinders",
+       xlab = "Cylinders",
+       ylab = "MPG")
+
+
+
+
+library(ggplot2)
+
+# Scatter with regression line
+ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(title = "ggplot2: MPG vs Weight by Cylinders",
+       x = "Weight",
+       y = "MPG",
+       color = "Cylinders")
+
+# Faceted histogram
+ggplot(mtcars, aes(mpg)) +
+  geom_histogram(binwidth = 2, fill = "skyblue", color = "black") +
+  facet_wrap(~ cyl) +
+  labs(title = "ggplot2: MPG Distribution by Cylinders",
+       x = "MPG",
+       y = "Count")Uploading assignment9.R…]()
 
 
 ## Module # 7 R Object: S3 vs. S4 assignment

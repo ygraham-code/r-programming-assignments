@@ -1,0 +1,19 @@
+
+Package: Friedman
+Title: Tools for Data Analysis and Visualization
+Version: 0.0.0.9000
+Authors@R: 
+    person("Yasmine", "Graham", email = "graham191@usf.edu", role = c("aut", "cre"))
+Description: Provides functions for cleaning, summarizing, and visualizing
+    data in R. The package is designed to support efficient exploratory
+    data analysis workflows for students and researchers.
+Depends: R (>= 3.1.2)
+Imports: ggplot2, dplyr
+License: CC0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+LazyData: true
+
+
+
